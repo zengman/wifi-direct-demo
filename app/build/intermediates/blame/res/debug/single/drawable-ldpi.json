@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "G:\\Android\\wifi-direct-demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\icon.png",
+        "source": "G:\\Android\\wifi-direct-demo\\app\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "G:\\Android\\wifi-direct-demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_discover.png",
+        "source": "G:\\Android\\wifi-direct-demo\\app\\src\\main\\res\\drawable-ldpi\\ic_action_discover.png"
+    },
+    {
+        "merged": "G:\\Android\\wifi-direct-demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_launcher.png",
+        "source": "G:\\Android\\wifi-direct-demo\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\Android\\wifi-direct-demo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_action_on_off.png",
+        "source": "G:\\Android\\wifi-direct-demo\\app\\src\\main\\res\\drawable-ldpi\\ic_action_on_off.png"
+    }
+]
