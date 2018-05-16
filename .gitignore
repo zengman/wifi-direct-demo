@@ -2,3 +2,4 @@
 .gradle
 local.properties
 settings.gradle
+app/bulid/*
