@@ -56,7 +56,7 @@ public class FileTransferService extends IntentService {
 				socket.connect((new InetSocketAddress(host, port)), SOCKET_TIMEOUT);
 
 				Log.d(WiFiDirectActivity.TAG, "Client socket - " + socket.isConnected());
-				OutputStream stream = socket.getOutputStream();
+				OutputStream stream = socket.getOutputStream(); // getOutput 这是发给服务器的数据;
 				ContentResolver cr = context.getContentResolver();
 				InputStream is = null;
 				try {

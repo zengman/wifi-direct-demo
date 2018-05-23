@@ -6,11 +6,16 @@ import android.content.Intent;
 import android.content.Context;
 import android.util.Log;
 
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
@@ -33,7 +38,7 @@ public class SendMessageService extends IntentService {
         super("SendMessageService");
     }
 
-
+    //client write message and send to server
     @Override
     protected void onHandleIntent(Intent intent) {
         if (intent != null) {
@@ -54,16 +59,15 @@ public class SendMessageService extends IntentService {
                     ContentResolver cr = context.getContentResolver();
                     InputStream is = null;
                     try{
-                        DataOutputStream writer = new DataOutputStream(stream);
-                        writer.writeDouble(109.2222);
-
-                        Log.d(WiFiDirectActivity.TAG, "send message - ");
-
+                        OutputStreamWriter osw = new OutputStreamWriter(stream);
+                        BufferedWriter rw = new BufferedWriter(osw);
+                        rw.write("test value");
+                        rw.close();
 
                     }catch (IOException e){
                         Log.e(WiFiDirectActivity.TAG, e.getMessage());
                     }
-                    DeviceDetailFragment.copymessage(is,stream);
+
                     Log.d(WiFiDirectActivity.TAG, "Client: Data written");
                 }catch (IOException e){
                     Log.e(WiFiDirectActivity.TAG, e.getMessage());
