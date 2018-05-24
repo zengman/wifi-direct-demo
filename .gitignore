@@ -10,3 +10,8 @@
 /captures
 /app/buid/*
 .externalNativeBuild
+/.project
+/.settings/
+app/.classpath
+app/.project
+app/.settings/
